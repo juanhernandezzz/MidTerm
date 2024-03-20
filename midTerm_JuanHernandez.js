@@ -1,5 +1,5 @@
-let quantity = prompt("How Many Pizzas?")
-let quantity2 = prompt("How Many slices?")
+//let quantity = prompt("How Many Pizzas?")
+//let quantity2 = prompt("How Many slices?")
 //this variable will act as a checkpoint or event triger in which if the user inputs a value greater or less than this value
 //then the if statements below can decide what to say to the user
 let quantityLimit1 = '5'
@@ -79,8 +79,9 @@ button2.onclick = function(){
     if(confirm("You Sure you want the slice of pizza?"))
        
     {
-        if ( prompt("How Many Slices?") >= quantityLimit2 ){
-            alert('Really 10 slices!?, why not order a whole pizza then!?');
+        let quantity2 = prompt("How Many Slices?")
+        if ( quantity2 >= quantityLimit2 ){
+            alert(`Really ${quantity2} slices!?, why not order a whole pizza then!?`);
         }
         
     }
@@ -90,3 +91,4 @@ button2.onclick = function(){
     }
 
 };
+
