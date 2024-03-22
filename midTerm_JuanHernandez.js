@@ -82,48 +82,18 @@ pizzaSliceButton.onclick = function(){
             alert(`Really ${quantity2} slices!?, why not order a whole pizza then!?`);
         }
         // depending on user's response, a certain number of pizzas will be displayed
-        for (let sliceQuantity = quantity2; sliceQuantity<= 3; sliceQuantity++)
+        for (let sliceQuantity = 0; sliceQuantity< quantity2; sliceQuantity++)
       {
-        if(sliceQuantity == 1){
+        
              const sliceImage = document.createElement("img");
             sliceImage.src = "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pizza_slice_icon.png";
             document.body.appendChild(sliceImage);
             sliceImage.style.width = "100px";
-            sliceImage.style.length = "100px";
-            break;
-        }
         
-        else if(sliceQuantity == 2){
-            const sliceImage = document.createElement("img");
-            sliceImage.src = "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pizza_slice_icon.png";
-            document.body.appendChild(sliceImage);
-            sliceImage.style.width = "100px";
-            sliceImage.style.length = "100px";
-            document.body.appendChild(sliceImage);
-            sliceImage.style.width = "100px";
-            sliceImage.style.length = "100px";
-          
-        }
+     
         
-        else if(sliceQuantity == 3){
-            const sliceImage = document.createElement("img");
-            sliceImage.src = "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pizza_slice_icon.png";
-            document.body.appendChild(sliceImage);
-            sliceImage.style.width = "100px";
-            sliceImage.style.length = "100px";
-            document.body.appendChild(sliceImage);
-            sliceImage.style.width = "100px";
-            sliceImage.style.length = "100px";
-            document.body.appendChild(sliceImage);
-            sliceImage.style.width = "100px";
-            sliceImage.style.length = "100px";
-         
-
-        }
         
-        else{
-            break;
-        }
+       
       }
         
     }
